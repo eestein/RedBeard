@@ -1,0 +1,17 @@
+{
+  "main": "Reflect.js",
+  "format": "cjs",
+  "meta": {
+    "*": {
+      "globals": {
+        "process": "process"
+      }
+    },
+    "*.json": {
+      "format": "json"
+    },
+    "typings.d.ts": {
+      "format": "esm"
+    }
+  }
+}

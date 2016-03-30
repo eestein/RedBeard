@@ -1,0 +1,12 @@
+{
+  "main": "dist/zone.js",
+  "meta": {
+    "dist/zone.js": {
+      "exports": [
+        "Zone",
+        "zone"
+      ],
+      "format": "global"
+    }
+  }
+}

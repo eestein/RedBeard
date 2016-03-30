@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "src/core/util/decorators.js": {
+      "deps": [
+        "reflect-metadata"
+      ]
+    }
+  }
+}
