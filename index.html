@@ -4,8 +4,14 @@
 <script src="jspm.browser.js"></script>
 <script src="jspm.config.js"></script>
 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
 <body>
-  <div id="container"></div>
+  <div id="container">
+    <h1><span class="label label-warning">Ahoy!</span></h1>
+    <br />
+    <user-component></user-component>
+  </div>
   <script>
     SystemJS.import('src/app');
   </script>

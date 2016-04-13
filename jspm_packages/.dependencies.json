@@ -164,13 +164,27 @@
   "npm:ieee754@1.1.6": {},
   "npm:base64-js@1.1.2": {},
   "github:jspm/nodelibs-events@0.2.0-alpha": {},
-  "npm:angular2@2.0.0-beta.12": {
+  "npm:zone.js@0.5.15": {},
+  "npm:reflect-metadata@0.1.3": {},
+  "npm:bn.js@4.11.1": {},
+  "npm:angular@1.5.3": {},
+  "npm:angular2@2.0.0-beta.14": {
     "reflect-metadata": "npm:reflect-metadata@^0.1.3",
     "rxjs": "npm:rxjs@^5.0.0-beta.2",
     "zone.js": "npm:zone.js@^0.5.15"
   },
-  "npm:zone.js@0.5.15": {},
-  "npm:reflect-metadata@0.1.3": {},
-  "npm:bn.js@4.11.1": {},
-  "npm:angular@1.5.3": {}
+  "npm:holderjs@2.9.3": {
+    "shaven": "npm:shaven@^0.8.1"
+  },
+  "npm:shaven@0.8.1": {
+    "escape-html": "npm:escape-html@~1.0.1"
+  },
+  "npm:escape-html@1.0.3": {},
+  "npm:jquery@2.2.3": {},
+  "npm:angular-ui-bootstrap@1.3.1": {},
+  "github:twbs/bootstrap@3.3.6": {
+    "jquery": "github:components/jquery"
+  },
+  "github:components/jquery@2.2.1": {},
+  "npm:angular-resource@1.5.3": {}
 }

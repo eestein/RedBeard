@@ -1,10 +1,9 @@
-class Greeter {
-    constructor(public greeting: string) { }
-    greet() {
-        return "<h1>" + this.greeting + "</h1>";
-    }
-};
+'use strict';
 
-var greeter = new Greeter("Hello, world!");
+import appServer from '../app.server/index';
 
-document.body.innerHTML = greeter.greet();
+export default angular.module('app', [
+  appServer.name
+]);
+
+angular.bootstrap(document.documentElement, ['app']);

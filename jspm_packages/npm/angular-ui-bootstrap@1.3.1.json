@@ -1,0 +1,47 @@
+{
+  "main": "index.js",
+  "format": "cjs",
+  "meta": {
+    "*": {
+      "globals": {
+        "process": "process"
+      }
+    },
+    "*.json": {
+      "format": "json"
+    },
+    "src/carousel/carousel.css": true,
+    "src/datepicker/datepicker.css": true,
+    "src/datepickerPopup/popup.css": true,
+    "src/position/position.css": true,
+    "src/timepicker/timepicker.css": true,
+    "src/tooltip/tooltip.css": true,
+    "src/typeahead/typeahead.css": true
+  },
+  "map": {
+    "./src/accordion.js": "./src/accordion/index.js",
+    "./src/alert.js": "./src/alert/index.js",
+    "./src/buttons.js": "./src/buttons/index.js",
+    "./src/carousel.js": "./src/carousel/index.js",
+    "./src/collapse.js": "./src/collapse/index.js",
+    "./src/dateparser.js": "./src/dateparser/index.js",
+    "./src/datepicker.js": "./src/datepicker/index.js",
+    "./src/datepickerPopup.js": "./src/datepickerPopup/index.js",
+    "./src/debounce.js": "./src/debounce/index.js",
+    "./src/dropdown.js": "./src/dropdown/index.js",
+    "./src/isClass.js": "./src/isClass/index.js",
+    "./src/modal.js": "./src/modal/index.js",
+    "./src/pager.js": "./src/pager/index.js",
+    "./src/pagination.js": "./src/pagination/index.js",
+    "./src/paging.js": "./src/paging/index.js",
+    "./src/popover.js": "./src/popover/index.js",
+    "./src/position.js": "./src/position/index.js",
+    "./src/progressbar.js": "./src/progressbar/index.js",
+    "./src/rating.js": "./src/rating/index.js",
+    "./src/stackedMap.js": "./src/stackedMap/index.js",
+    "./src/tabs.js": "./src/tabs/index.js",
+    "./src/timepicker.js": "./src/timepicker/index.js",
+    "./src/tooltip.js": "./src/tooltip/index.js",
+    "./src/typeahead.js": "./src/typeahead/index.js"
+  }
+}

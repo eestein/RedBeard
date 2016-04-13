@@ -3,7 +3,12 @@
     "name": "app",
     "dependencies": {
       "angular": "npm:angular@^1.5.3",
-      "angular2": "npm:angular2@^2.0.0-beta.12"
+      "angular-resource": "npm:angular-resource@^1.5.3",
+      "angular-ui-bootstrap": "npm:angular-ui-bootstrap@^1.3.1",
+      "angular2": "npm:angular2@^2.0.0-beta.14",
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "holderjs": "npm:holderjs@^2.9.3",
+      "jquery": "npm:jquery@^2.2.3"
     },
     "devDependencies": {
       "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.2"
@@ -27,7 +32,43 @@
       "zone.js": "npm:zone.js@^0.5.15"
     },
     "overrides": {
-      "npm:angular2@2.0.0-beta.12": {
+      "github:components/jquery@2.2.1": {
+        "main": "jquery"
+      },
+      "github:twbs/bootstrap@3.3.6": {
+        "shim": {
+          "js/bootstrap": {
+            "deps": [
+              "jquery"
+            ],
+            "exports": "$"
+          }
+        },
+        "dependencies": {
+          "jquery": "github:components/jquery"
+        },
+        "files": [
+          "dist",
+          "fonts",
+          "js",
+          "css",
+          "less",
+          "grunt",
+          "LICENSE"
+        ],
+        "systemjs": {
+          "main": "dist/js/bootstrap.js",
+          "modules": {
+            "dist/js/bootstrap.js": {
+              "deps": [
+                "jquery"
+              ],
+              "exports": "$"
+            }
+          }
+        }
+      },
+      "npm:angular2@2.0.0-beta.14": {
         "main": false,
         "dependencies": {
           "reflect-metadata": "npm:reflect-metadata@^0.1.3",
@@ -63,6 +104,9 @@
         "ignore": [
           "test.js"
         ]
+      },
+      "npm:jquery@2.2.3": {
+        "format": "amd"
       },
       "npm:typescript@1.8.9": {
         "browser": {},

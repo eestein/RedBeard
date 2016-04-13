@@ -1,0 +1,18 @@
+{
+  "main": "holder.js",
+  "format": "cjs",
+  "meta": {
+    "*": {
+      "globals": {
+        "process": "process"
+      }
+    },
+    "*.json": {
+      "format": "json"
+    }
+  },
+  "map": {
+    "./src.js": "./src/index.js",
+    "./src/lib.js": "./src/lib/index.js"
+  }
+}

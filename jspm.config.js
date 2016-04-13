@@ -17,6 +17,16 @@ SystemJS.config({
           "format": "es6"
         }
       }
+    },
+    "src/app.server": {
+      "main": "index",
+      "defaultExtension": "ts",
+      "meta": {
+        "*.ts": {
+          "loader": "plugin-typescript",
+          "format": "es6"
+        }
+      }
     }
   }
 });
@@ -29,7 +39,10 @@ SystemJS.config({
   ],
   map: {
     "angular": "npm:angular@1.5.3",
-    "angular2": "npm:angular2@2.0.0-beta.12",
+    "angular-resource": "npm:angular-resource@1.5.3",
+    "angular-ui-bootstrap": "npm:angular-ui-bootstrap@1.3.1",
+    "angular2": "npm:angular2@2.0.0-beta.14",
+    "bootstrap": "github:twbs/bootstrap@3.3.6",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
     "child_process": "github:jspm/nodelibs-child_process@0.2.0-alpha",
     "constants": "github:jspm/nodelibs-constants@0.2.0-alpha",
@@ -37,6 +50,8 @@ SystemJS.config({
     "es6-shim": "npm:es6-shim@0.35.0",
     "events": "github:jspm/nodelibs-events@0.2.0-alpha",
     "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
+    "holderjs": "npm:holderjs@2.9.3",
+    "jquery": "npm:jquery@2.2.3",
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
     "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.2",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
@@ -49,7 +64,22 @@ SystemJS.config({
     "zone.js": "npm:zone.js@0.5.15"
   },
   packages: {
-    "npm:angular2@2.0.0-beta.12": {
+    "github:twbs/bootstrap@3.3.6": {
+      "map": {
+        "jquery": "github:components/jquery@2.2.1"
+      }
+    },
+    "npm:holderjs@2.9.3": {
+      "map": {
+        "shaven": "npm:shaven@0.8.1"
+      }
+    },
+    "npm:shaven@0.8.1": {
+      "map": {
+        "escape-html": "npm:escape-html@1.0.3"
+      }
+    },
+    "npm:angular2@2.0.0-beta.14": {
       "map": {
         "reflect-metadata": "npm:reflect-metadata@0.1.3",
         "rxjs": "npm:rxjs@5.0.0-beta.2",
